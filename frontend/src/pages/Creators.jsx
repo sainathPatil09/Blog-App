@@ -7,7 +7,7 @@ const Creators = () => {
 
   useEffect(() => {
     const fetchAdmins = async () => {
-      const { data } = await axios.get('http://localhost:4001/api/users/admins',
+      const { data } = await axios.get('https://blog-app-umber-phi.vercel.app/api/users/admins',
         {
           withCredentials: true,
         })

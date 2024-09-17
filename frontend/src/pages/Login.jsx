@@ -22,7 +22,7 @@ const Login = () => {
     //   toast.error("Please fill all fields")
     // }
     try {
-      const { data } = await axios.post("http://localhost:4001/api/users/login",
+      const { data } = await axios.post("https://blog-app-umber-phi.vercel.app/api/users/login",
         {email, password, role  },
         {
           withCredentials: true,
