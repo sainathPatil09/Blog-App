@@ -40,25 +40,28 @@ const Trending = () => {
                 <Link to={`/blog/${element._id}`}
                   className='bg-white hover:shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300'
                 >
-                  {/* <div>
-            <img src={element.blogImage.url} alt="" />
-            <div></div>
-            <h1>{element.title}</h1>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p></p>
-            <p></p>
-          </div> */}
-                  <div className="rounded-xl overflow-hidden  w-84 shadow-xl">
-                    <figure className=' group relative'>
+
+                  <div className="rounded-xl overflow-hidden   w-84 shadow-xl h-52">
+                    <div className='group relative h-full'>
+                      <img
+                        className='w-full h-full object-cover'
+                        src={element?.blogImage.url}
+                        alt="Shoes" />
+                      <h1 className='absolute text-white font-semibold bottom-1 left-3 text-md group-hover:text-black transition-colors duration-300'>{element?.title} </h1>
+                      <h2 className='absolute text-white font-semibold bottom-6 left-3 text-xl group-hover:text-black transition-colors duration-300'>{element?.category}</h2>
+                    </div>
+
+                  </div>
+
+
+                  {/* <div className="rounded-xl overflow-hidden  w-84 shadow-xl">
+                    <figure className=' group relative h-full'>
                       <img
                         src={element.blogImage.url}
                         alt="Shoes" />
                       <h1 className='absolute text-black font-semibold bottom-1 left-3 text-md group-hover:text-yellow-400 transition-colors duration-300'>{element.title} </h1>
                     </figure>
                     <div className="flex p-6 flex-row gap-8">
-                      {/* <div>{element.title}</div> */}
                       <img className='w-16 h-16 rounded-full  border-2 border-yellow-300' src={element.adminPhoto} alt="photo" />
                       <div className=''>
 
@@ -67,11 +70,13 @@ const Trending = () => {
                       </div>
 
                     </div>
-                  </div>
+                  </div> */}
                 </Link>
-               </div>)
+              </div>)
           })
-        ) : (<div> wasd</div>)}
+        ) : (<div className=" flex items-center justify-center">
+          Loading....
+        </div>)}
       </Carousel>
     </div>
   )

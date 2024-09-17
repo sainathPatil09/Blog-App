@@ -41,7 +41,7 @@ const Contact = () => {
             <p>Any question or remarks? Just write a message!</p>
           </div>
 
-          <div className='w-full flex flex-col md:flex-row justify-start mt-10 bg-white' >
+          <div className=' hover:shadow-xl  rounded-xl w-full flex flex-col md:flex-row justify-start mt-10 bg-white' >
             <div className='bg-black text-white md:w-[40%] border-2 border-black rounded-xl p-4 space-y-4'>
               <h2 className='text-4xl font-bold'>Contact Information</h2>
               <p className='text-gray-400'>say somthing to start a live chat!</p>
@@ -85,7 +85,7 @@ const Contact = () => {
                   />
                   {errors.message && <span className='text-sm font-semibold text-red-500'>This field is required</span>}
                 </div>
-                <button type='submit' className='bg-black w-full text-white hover:bg-yellow-500 hover:text-black px-3 py-2 mt-4 rounded-lg '>Submit</button>
+                <button type='submit' className='bg-black w-full text-white hover:bg-blue-500 hover:text-white px-3 py-2 mt-4 rounded-lg '>Submit</button>
               </form>
 
             </div>

@@ -21,19 +21,22 @@ const Devotional = () => {
                 >
 
                   <div className="rounded-xl overflow-hidden  w-84 shadow-xl">
-                    <figure className=' group relative'>
+                    <div className=' group relative'>
                       <img
+                        className='w-full object-cover'
                         src={blog?.blogImage.url }
                         alt="Shoes" />
                       <h1 className='absolute text-black font-semibold bottom-1 left-3 text-md group-hover:text-yellow-400 transition-colors duration-300'>{blog?.title} </h1>
                       <h2 className='absolute text-black font-semibold bottom-6 left-3 text-xl group-hover:text-yellow-400 transition-colors duration-300'>{blog?.category}</h2>
-                    </figure>
+                    </div>
                     
                   </div>
 
                 </Link>
               ))
-            ) :(<div>asd</div>)}
+            ) :(<div className=" flex items-center justify-center">
+              Loading....
+            </div>)}
           </div>
         </div>
       </div>

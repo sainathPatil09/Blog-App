@@ -28,24 +28,21 @@ const Creators = () => {
             admin.slice(0, admin.length).map((element) => {
               { console.log(element) }
               return (
-                <div key={element._id} className='p-3 flex justify-center items-center flex-col bg-white border border-gray-400 rounded-lg shadow-md mx-2'>
-
-
-                  <div className=" rounded-full overflow-hidden  w-40 shadow-xl bg-white hover:shadow-gray-400 transform hover:scale-105 transition-transform duration-300">
-                    <figure className=' group relative'>
-                      <img
-                        src={element.photo.url}
-                        alt="Photo" />
-                    </figure>
-
+                <div className='  flex justify-center items-center' key={element._id}>
+                <div className="">
+                  <img
+                    src={element.photo.url}
+                    alt="blog"
+                    className="w-56 h-56 object-cover border border-black rounded-full items-center "
+                  />
+                  <div className="text-center font-semibold ">
+                    <p>{element.name}</p>
+                    <p className="text-gray-600 text-xs">{element.role}</p>
+                    <p className="text-gray-600 text-xs">{element.email}</p>
                   </div>
-                  <div className='text-center'>
-
-                    <h2 className='text-xl font-semibold  mt-2'>{element.name}</h2>
-                    <p>{element.email}</p>
-                    <p>{element.role}</p>
-                  </div>
-                </div>)
+                </div>
+              </div>
+                )
             })
           ) : (<div> wasd</div>)}
         </div>
