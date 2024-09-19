@@ -8,7 +8,7 @@ const Creator = () => {
 
   useEffect(() => {
     const fetchAdmins = async () => {
-      const { data } = await axios.get('https://blog-app-umber-phi.vercel.app/api/users/admins',
+      const { data } = await axios.get('https://blog-app-xygc.onrender.com/api/users/admins',
         {
           withCredentials: true,
         })

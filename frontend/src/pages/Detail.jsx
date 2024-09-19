@@ -11,7 +11,7 @@ const Detail = () => {
         const fetchBlog = async () => {
 
             try {
-                const { data } = await axios.get(`https://blog-app-umber-phi.vercel.app/api/blogs/single-blog/${id}`,
+                const { data } = await axios.get(`https://blog-app-xygc.onrender.com/api/blogs/single-blog/${id}`,
                     {
                         withCredentials: true,
                         headers: {

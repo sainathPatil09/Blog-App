@@ -32,7 +32,7 @@ const CreateBlog = () => {
     console.log(blogImage)
 
     try {
-      const { data } = await axios.post("https://blog-app-umber-phi.vercel.app/api/blogs/create",
+      const { data } = await axios.post("https://blog-app-xygc.onrender.com/api/blogs/create",
         formData,
         {
           withCredentials: true,

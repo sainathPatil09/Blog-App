@@ -25,7 +25,7 @@ const SideBar = ({ setComponent }) => {
         e.preventDefault();
 
         try {
-            const { data } = await axios.get("https://blog-app-umber-phi.vercel.app/api/users/logout", { withCredentials: true });
+            const { data } = await axios.get("https://blog-app-xygc.onrender.com/api/users/logout", { withCredentials: true });
             setIsAuthenticated(false)
             localStorage.removeItem("jwt")
             toast.success("Logout Succsefully")

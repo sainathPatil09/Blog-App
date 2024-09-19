@@ -9,7 +9,7 @@ const MyBlogs = () => {
   useEffect(() =>  {
     const fetchMyBlogs = async () => {
       try {
-        const { data } = await axios.get('https://blog-app-umber-phi.vercel.app/api/blogs/my-blog', { withCredentials: true });
+        const { data } = await axios.get('https://blog-app-xygc.onrender.com/api/blogs/my-blog', { withCredentials: true });
         console.log(data);
         SetmyBlogs(data);
 
@@ -27,7 +27,7 @@ const MyBlogs = () => {
   }, [])
   
   const handleDelete=async(id)=>{
-    await axios.delete(`https://blog-app-umber-phi.vercel.app/api/blogs/delete/${id}`, {withCredentials:true})
+    await axios.delete(`https://blog-app-xygc.onrender.com/api/blogs/delete/${id}`, {withCredentials:true})
     .then((res)=>{
       toast.success(res.data.message || 'Blog deleted successfully')
       SetmyBlogs((value)=>value.filter((blog)=>blog._id!==id))
